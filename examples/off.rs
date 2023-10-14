@@ -1,5 +1,7 @@
 //! Utilities for reading OFF object files. https://en.wikipedia.org/wiki/OFF_(file_format)
 
+use std::io::BufRead;
+
 /// Reads and decodes an OFF object file's vertices, ignoring edges/faces.
 pub fn read_off_file_vertices(path: &str) -> std::io::Result<Vec<(f32, f32, f32)>> {
     let mut vertices = Vec::new();
