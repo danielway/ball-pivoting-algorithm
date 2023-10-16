@@ -1,3 +1,9 @@
+//! examples/bathtub
+//!
+//! This example dataset is of a bathtub obtained from Princeton's ModelNet project.
+//! https://modelnet.cs.princeton.edu
+//!
+
 use crate::off::read_off_file_vertices;
 
 mod off;
